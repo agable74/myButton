@@ -64,7 +64,7 @@ public class myNewGUI extends JFrame {
                 audioClip.start();
                 //waits for full audio clip
                 try {
-                    Thread.sleep(800);
+                    Thread.sleep(750);
                 }catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
