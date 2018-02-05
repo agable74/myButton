@@ -1,0 +1,14 @@
+To pull:
+
+git pull origin master
+
+
+
+To push:
+
+git add "Thing to add"
+git commit -m "Message about changes"
+git push -u origin master
+
+To make new branch:
+git checkout -b new-branch existing-branch
