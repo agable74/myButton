@@ -30,6 +30,9 @@ public class myNewGUI extends JFrame {
         custom.setRolloverIcon(isHover);
         add(custom);
 
+        HandlerClass handler = new HandlerClass();
+        custom.addActionListener(handler);
+
 
     }
 
@@ -50,7 +53,7 @@ public class myNewGUI extends JFrame {
         public void actionPerformed(ActionEvent e) {
             //attempts to play the sound file
             try{
-                String sound = "Lab_11/data/victory.wav";
+                String sound = "data/airHorn.wav";
                 File audioFile = new File(sound);
                 AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
                 AudioFormat format = audioStream.getFormat();
