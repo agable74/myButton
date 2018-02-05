@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
+//Authored by Alex Gable 2/4/2018
+
 public class myNewGUIMain {
     public static void main(String[] args) {
         myNewGUI go = new myNewGUI();

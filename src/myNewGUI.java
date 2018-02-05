@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
+//Authored by Alex Gable 2/4/2018
+
 public class myNewGUI extends JFrame {
 
     //private JButton regular;
