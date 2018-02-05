@@ -15,8 +15,8 @@ public class myNewGUI extends JFrame {
         super("");
         setLayout(new FlowLayout());
 
-        notPress = createImageIcon("redButton.png","my red button");
-        isPress = createImageIcon("blueButton.png","my blue button");
+        notPress = createImageIcon("unpressed.png","my red button");
+        isPress = createImageIcon("pressed.png","my blue button");
 
         custom = new JButton(notPress);
         custom.setBorderPainted(false);
@@ -24,6 +24,7 @@ public class myNewGUI extends JFrame {
         custom.setContentAreaFilled(false);
         custom.setPressedIcon(isPress);
         add(custom);
+
 
     }
 

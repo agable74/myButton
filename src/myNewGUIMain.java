@@ -9,5 +9,6 @@ public class myNewGUIMain {
         go.pack();
         go.setLocationRelativeTo(null);
         go.setVisible(true);
+
     }
 }
