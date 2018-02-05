@@ -53,17 +53,18 @@ public class myNewGUI extends JFrame {
         public void actionPerformed(ActionEvent e) {
             //attempts to play the sound file
             try{
-                String sound = "data/airHorn.wav";
+                String sound = "data/beep.wav";
                 File audioFile = new File(sound);
                 AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
                 AudioFormat format = audioStream.getFormat();
                 DataLine.Info info = new DataLine.Info(Clip.class, format);
                 Clip audioClip = (Clip) AudioSystem.getLine(info);
                 audioClip.open(audioStream);
+                audioClip.loop(1000);
                 audioClip.start();
                 //waits for full audio clip
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(800);
                 }catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
@@ -84,4 +85,5 @@ public class myNewGUI extends JFrame {
             }
         }
     }
+
 }
